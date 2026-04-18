@@ -109,3 +109,7 @@ def build_scenario_3_strategy() -> InterestRateStrategy:
 def build_scenario_4_strategy() -> InterestRateStrategy:
     """Сценарий 4: 3 года ошибки (12 кварталов), затем правило Тейлора."""
     return ErrorThenTaylorStrategy(error_strategy=InflationIndexedStrategy(), correction_quarters=12)
+
+def build_scenario_5_strategy(rate: float = 0.13) -> InterestRateStrategy:
+    """Сценарий 5: ставка rate на всем горизонте."""
+    return ErrorThenTaylorStrategy(error_strategy=ConstantRateStrategy(rate=rate), correction_quarters=0)

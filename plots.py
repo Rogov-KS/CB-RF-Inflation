@@ -6,7 +6,7 @@ import numpy as np
 from simulation import ScenarioResult
 
 
-def plot_main_indicators(scen: ScenarioResult, title: str) -> None:
+def plot_main_indicators(scen: ScenarioResult, title: str, do_set_ylim: bool = True) -> None:
     """
     Четыре панели: инфляция, уровни ВВП, номинальная и реальная ставки (ось X — кварталы).
     Показывает интерактивное окно matplotlib.
@@ -23,7 +23,8 @@ def plot_main_indicators(scen: ScenarioResult, title: str) -> None:
     axs[0, 1].plot(q, scen['actual_gdp'], 'k-', label='ВВП')
     axs[0, 1].plot(q, scen['potential_gdp'], 'r--', label='потенциальный ВВП')
     axs[0, 1].set_title('ВВП и потенциальный ВВП')
-    axs[0, 1].set_ylim(95, 115)
+    if do_set_ylim:
+        axs[0, 1].set_ylim(95, 115)
     axs[0, 1].legend()
     axs[0, 1].grid(True)
 
