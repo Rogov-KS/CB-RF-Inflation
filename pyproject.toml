@@ -1,0 +1,10 @@
+[project]
+name = "cb-rf-inflation"
+version = "0.1.0"
+description = "Simulation of inflation and key-rate scenarios inspired by Bank of Russia analytical note."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]
