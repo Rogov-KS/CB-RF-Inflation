@@ -6,9 +6,9 @@
 
 ## Ноутбуки с исследованиями
 
-- `notebooks/reproduce.ipynb` — полное воспроизведение графиков из аналитической записки с пошаговыми пояснениями в Markdown.
+- [`notebooks/reproduce.ipynb`](https://github.com/Rogov-KS/CB-RF-Inflation/blob/master/notebooks/reproduce.ipynb) — полное воспроизведение графиков из аналитической записки с пошаговыми пояснениями в Markdown.
 
-- `notebooks/new_strategies.ipynb` — исследование альтернативных режимов ключевой ставки (константные 9/11/13/16/20/30% и двухпериодная стратегия `13% -> 11%`).
+- [`notebooks/new_strategies.ipynb`](https://github.com/Rogov-KS/CB-RF-Inflation/blob/master/notebooks/new_strategies.ipynb — исследование альтернативных режимов ключевой ставки (константные 9/11/13/16/20/30% и двухпериодная стратегия `13% -> 11%`).
 
 ## Исследованные стратегии
 
